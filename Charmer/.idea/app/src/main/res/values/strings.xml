@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Charmer</string>
+    <string name="no_tienes_una_cuenta">¿No tienes una cuenta?.</string>
+    <string name="mujer">Mujer</string>
+    <string name="ya_tienes_cuenta">¿Ya tienes cuenta?.</string>
+    <string name="login">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="otro">Otro</string>
+    <string name="mujerP">Mujer</string>
+    <string name="rut">B12345678</string>
+    <string name="cif">CIF</string>
+    <string name="av_vicu_a_2010">Av. vicuña 2010</string>
+    <string name="galeria">Galeria</string>
+    <string name="todo">TODO</string>
+    <string name="_10">10°</string>
+    <string name="errormail">Email invalido</string>
+    <string name="errorpass">Debe contener Mayuscula, numero y caracter especial</string>
+    <string name="errorconpass">Las contraseñas no coinciden</string>
+    <string name="errorname">Ingrese un nombre valido</string>
+    <string name="errorfono">Ingrese un numero valido</string>
+    <string name="errorubi">Ingrese una direccion precisa</string>
+    <string name="errorrut">Ingrese un RUT valido</string>
+    <string name="nueva_publicacion">Nueva Publicacion</string>
+    <string name="pluss">pluss</string>
+    <string name="submit" />
+    <string name="ingrese_aqui_una_breve_descripci_n">Ingrese aqui una breve descripción</string>
+    <string name="guardar">Guardar</string>
+    <string name="nueva_publicaci_n">Nueva Publicación</string>
+    <string name="btn_tienda_guardar">Guardar</string>
+    <string name="precio">Precio:</string>
+    <string name="a_adir_producto">Añadir Producto</string>
+    <string name="vender">Vender</string>
+    <string name="titulo">Titulo</string>
+    <!--items para categorias -->
+    <string-array name="Categorias">
+        <item>Seleccione la Categoria</item>
+        <item>Accesorios</item>
+        <item>Vestido</item>
+        <item>Bolsos</item>
+        <item>Conjuntos</item>
+        <item>Camisas</item>
+        <item>SobreTodo</item>
+        <item>Pantalon</item>
+        <item>Zapatos</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="Tallas">
+        <item>Seleccione la Talla</item>
+        <item> 34 - XS </item>
+        <item> 36 - S </item>
+        <item> 38 - S/M</item>
+        <item> 40 - M</item>
+        <item> 42 - M/L</item>
+        <item> 44 - L</item>
+        <item> 46 - L/XL</item>
+        <item> 48 - XL</item>
+        <item> 50 - XL/XXL</item>
+        <item> 52 - XXL</item>
+        <item> No tiene</item>
+    </string-array>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_home"
+        android:title="Home"
+        android:icon="@drawable/casa"
+        />
+
+    <item android:id="@+id/menu_armario"
+        android:title="Armario"
+        android:icon="@drawable/close"
+        />
+
+    <item android:id="@+id/crear_outfit"
+        android:title="Armario"
+        android:icon="@drawable/crearout"
+        />
+
+    <item android:id="@+id/menu_agenda"
+        android:title="Calendario"
+        android:icon="@drawable/calendario"/>
+
+    <item android:id="@+id/menu_tienda"
+        android:title="Tienda"
+        android:icon="@drawable/tienda2"/>
+
+</menu>

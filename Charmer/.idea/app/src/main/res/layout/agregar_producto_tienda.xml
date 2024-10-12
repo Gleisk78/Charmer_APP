@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Agregar_Producto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/flecha_cancelar_prod"
+                android:layout_width="5dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/flecha_atras_negra"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/be_vietnam_bold"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/a_adir_producto"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F4F4F4"
+            android:paddingBottom="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <ImageView
+                    android:id="@+id/Imgeprod"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/agregarimagen"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:id="@+id/contimagenes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="10dp"
+                    android:text="Fotos: 0 / 3"
+                    android:textColor="#616161"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/Elejir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boton_cuadrado_negro"
+                        android:text="Agregar IMG" />
+
+                    <Button
+                        android:id="@+id/btn_tienda_sig"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boton_redondo_negro"
+                        android:text="Ver siguiente" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/be_vietnam_bold"
+                    android:text="Nombre:"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/Nombreprod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/boton_cuadrado_blanco_blanco"
+                    android:hint="Ingrese nombre del producto"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#757575" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/be_vietnam_bold"
+                    android:text="@string/precio"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/Precioprod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/boton_cuadrado_blanco_blanco"
+                    android:hint="$ 10.000"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#757575" />
+
+                <TextView
+                    android:id="@+id/Seleccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/be_vietnam_bold"
+                    android:text="Categoria"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/CategoriaProd"
+                    android:layout_width="349dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="7dp"
+                    android:entries="@array/Categorias"
+                    android:padding="5dp"
+                    android:textColorHint="#757575"
+                    android:background="@drawable/boton_cuadrado_blanco_blanco"
+                    android:textSize="20sp"
+                    android:focusableInTouchMode="true"
+                    android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+
+></Spinner>
+
+                <TextView
+                    android:id="@+id/seleccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/be_vietnam_bold"
+                    android:text="Talla"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/tallaprod"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/Seleccion"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/boton_cuadrado_blanco_blanco"
+                    android:entries="@array/Tallas"
+                    android:paddingLeft="15dp"
+                    android:textSize="20sp"
+                    android:textColorHint="#878787"
+                    android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"></Spinner>
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/be_vietnam_bold"
+                    android:text="Descripción:"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/Descripcionprod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/boton_cuadrado_blanco_blanco"
+                    android:hint="Describa el producto y su estado"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#878787" />
+
+
+                <TextView
+                    android:id="@+id/precio_producto_vista"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/be_vietnam_bold"
+                    android:text="Ubicación:"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/Ubicacionprod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/boton_cuadrado_blanco_blanco"
+                    android:hint="Ubicación Tienda"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#878787" />
+
+                <TextView
+                    android:id="@+id/nombre_usu_vista"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:paddingLeft="15dp"
+                    android:text="Opcional"
+                    android:textColor="#A1A1A1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/be_vietnam_bold"
+                    android:text="Categoria Sexo"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/RGrupoSex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/Rmujer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/custome_radio_marron"
+                        android:paddingLeft="5dp"
+                        android:text="Mujer"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        android:id="@+id/Rhombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/custome_radio_marron"
+                        android:paddingLeft="5dp"
+                        android:text="Hombre"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        android:id="@+id/rneutro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/custome_radio_marron"
+                        android:text="Neutro"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/be_vietnam_bold"
+                    android:text="Para"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/RTipoVenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/Rvender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/custome_radio_marron"
+                        android:paddingLeft="5dp"
+                        android:text="@string/vender"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        android:id="@+id/RDonar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:button="@drawable/custome_radio_marron"
+                        android:paddingLeft="5dp"
+                        android:text="Donar"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btn_publicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/boton_redondo_negro"
+                    android:text="Publicar"
+                    tools:layout_marginBottom="10dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

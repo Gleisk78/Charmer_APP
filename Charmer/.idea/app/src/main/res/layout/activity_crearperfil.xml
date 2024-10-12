@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Crearperfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#000000"
+            android:foregroundGravity="center"
+            app:flow_horizontalAlign="start"
+            app:flow_verticalAlign="top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/btn_flechaatras_perfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/flechawhite" />
+
+                <TextView
+                    android:id="@+id/Titulo_Perfil"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/be_vietnam"
+                    android:text="Paso 2"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/contenedor_crearperfil"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/btn_imgload"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_marginTop="40dp"
+                        android:background="#00FFFFFF"
+                        android:onClick="añadirimagen"
+                        android:scaleType="fitXY"
+                        app:shapeAppearanceOverlay="@style/RoundedImageView"
+                        app:srcCompat="@drawable/perfil"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:id="@+id/TV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="70dp"
+                        android:fontFamily="@font/be_vietnam_bold"
+                        android:text="Fullname"
+                        android:textColor="#000000"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/input_correo" />
+
+                    <EditText
+                        android:id="@+id/ET_Fullname"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="70dp"
+                        android:backgroundTint="#7E2702"
+                        android:ems="10"
+                        android:hint="Nombre de Usuario"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#7E2702"
+                        android:textColorHint="#424242"
+                        android:textColorLink="#7E2702"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.92"
+                        app:layout_constraintStart_toEndOf="@+id/img_llave"
+                        app:layout_constraintTop_toBottomOf="@+id/LabelPassword" />
+
+                    <TextView
+                        android:id="@+id/TV_fono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="70dp"
+                        android:fontFamily="@font/be_vietnam_bold"
+                        android:text="Telefono"
+                        android:textColor="#000000"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/input_correo" />
+
+                    <EditText
+                        android:id="@+id/ET_Fono"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="70dp"
+                        android:backgroundTint="#7E2702"
+                        android:ems="10"
+                        android:hint="+56 9 5555 5555"
+                        android:inputType="number|phone"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#7E2702"
+                        android:textColorHint="#424242"
+                        android:textColorLink="#7E2702"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.92"
+                        app:layout_constraintStart_toEndOf="@+id/img_llave"
+                        app:layout_constraintTop_toBottomOf="@+id/LabelPassword" />
+
+                    <TextView
+                        android:id="@+id/TV_Ubicacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="70dp"
+                        android:fontFamily="@font/be_vietnam_bold"
+                        android:text="Ubicación"
+                        android:textColor="#000000"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/input_correo" />
+
+                    <EditText
+                        android:id="@+id/ET_Direccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="70dp"
+                        android:backgroundTint="#7E2702"
+                        android:ems="10"
+                        android:hint="Av. vicuña 2010"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#7E2702"
+                        android:textColorHint="#424242"
+                        android:textColorLink="#7E2702"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.92"
+                        app:layout_constraintStart_toEndOf="@+id/img_llave"
+                        app:layout_constraintTop_toBottomOf="@+id/LabelPassword" />
+
+                    <RadioGroup
+                        android:id="@+id/rgsexo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_marginBottom="0dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/RB_man"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/botoncheck_negro"
+                            android:minHeight="48dp"
+                            android:text="Hombre"
+                            android:textColor="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/RB_Women"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/botoncheck_negro"
+                            android:minHeight="48dp"
+                            android:text="Mujer"
+                            android:textColor="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/RB_Other"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:button="@drawable/botoncheck_negro"
+                            android:minHeight="48dp"
+                            android:text="Otro"
+                            android:textColor="#000000" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/TV_cif"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="70dp"
+                        android:fontFamily="@font/be_vietnam_bold"
+                        android:text="RUT"
+                        android:textColor="#000000"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/input_correo" />
+
+                    <EditText
+                        android:id="@+id/ET_cif"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="70dp"
+                        android:backgroundTint="#7E2702"
+                        android:ems="10"
+                        android:hint="26555444-5"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#7E2702"
+                        android:textColorHint="#424242"
+                        android:textColorLink="#7E2702"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.92"
+                        app:layout_constraintStart_toEndOf="@+id/img_llave"
+                        app:layout_constraintTop_toBottomOf="@+id/LabelPassword" />
+
+                    <Button
+                        android:id="@+id/btn_guardar_perfil"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="80dp"
+                        android:background="@drawable/boton_redondo_negro"
+                        android:text="Crear" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

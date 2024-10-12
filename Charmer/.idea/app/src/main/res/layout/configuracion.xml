@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".configuracion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1B1B1B"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#1B1B1B"
+            android:foregroundGravity="center"
+            app:flow_horizontalAlign="start"
+            app:flow_verticalAlign="top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/btn_flechaMP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@drawable/flechawhite" />
+
+                <TextView
+                    android:id="@+id/Configuracion"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/be_vietnam"
+                    android:text="Configuracion"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#1B1B1B"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgperfilpersonaP"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="30dp"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/RoundedImageView"
+                            app:srcCompat="@drawable/perfilh"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:id="@+id/TV_Nombre_C"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="40dp"
+                            android:text="Nombre"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="28sp"
+                            tools:fontFamily="@font/be_vietnam_bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="479dp"
+                            android:background="@color/white">
+
+                            <LinearLayout
+                                android:layout_width="304dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginRight="60dp"
+                                android:layout_marginBottom="48dp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <Button
+                                    android:id="@+id/button_irperfil"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@color/white"
+                                    android:drawableLeft="@drawable/btn_perfil_cofi"
+                                    android:drawablePadding="40dp"
+                                    android:fontFamily="@font/be_vietnam_bold"
+                                    android:text="Perfil"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/button_irmisdonaciones"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@color/white"
+                                    android:drawableLeft="@drawable/btn_misdonaciones_confi"
+                                    android:drawablePadding="40dp"
+                                    android:fontFamily="@font/be_vietnam_bold"
+                                    android:text="Mis donaciones"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/button_irtienda"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@color/white"
+                                    android:drawableLeft="@drawable/btn_tienda_confi"
+                                    android:drawablePadding="40dp"
+                                    android:fontFamily="@font/be_vietnam_bold"
+                                    android:text="Tienda"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:id="@+id/divider6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="4dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="#7E2702" />
+
+                                <Button
+                                    android:id="@+id/button_irmanual"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@color/white"
+                                    android:drawableLeft="@drawable/btn_manual_confi"
+                                    android:drawablePadding="40dp"
+                                    android:fontFamily="@font/be_vietnam_bold"
+                                    android:text="Manual"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <Button
+                                    android:id="@+id/button_ircerrar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@color/white"
+                                    android:drawableLeft="@drawable/btn_cerrarsesion_confi"
+                                    android:drawablePadding="40dp"
+                                    android:fontFamily="@font/be_vietnam_bold"
+                                    android:text="Cerrar Sesión"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

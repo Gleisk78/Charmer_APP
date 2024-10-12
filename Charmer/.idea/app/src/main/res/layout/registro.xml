@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_creat_cuenta"
+    tools:context=".RegistroActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="45dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="70dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/titulo_crear_cuenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="107dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="108dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Crear Cuenta"
+                    android:textColor="#FFFFFF"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                    tools:fontFamily="@font/be_vietnam_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="60dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titulo_crear_cuenta">
+
+                    <TextView
+                        android:id="@+id/tit_Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="52dp"
+                        android:fontFamily="@font/be_vietnam_bold"
+                        android:text="Email"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/input_correo_crear"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:backgroundTint="#E6E6E6"
+                        android:ems="10"
+                        android:hint="correo@gmail.com"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#7E2702"
+                        android:textColorHint="#E6E6E6"
+                        android:textColorLink="#7E2702" />
+
+                    <TextView
+                        android:id="@+id/tit_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/be_vietnam_bold"
+                        android:text="Password"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="13dp"
+                        android:backgroundTint="#E6E6E6"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#7E2702"
+                        android:textColorHint="#E6E6E6"
+                        android:textColorLink="#7E2702"
+                        app:endIconMode="password_toggle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/password_crear"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginEnd="9dp"
+                            android:backgroundTint="#E6E6E6"
+                            android:ems="10"
+                            android:hint="Password1."
+                            android:inputType="textPassword"
+                            android:paddingRight="40dp"
+                            android:textColorHighlight="#FFFFFF"
+                            android:textColorLink="#FFFFFF"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Max. 8 caracteres."
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tit_con_pass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/be_vietnam_bold"
+                        android:text="Confirmar Password"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:backgroundTint="#E6E6E6"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#7E2702"
+                        android:textColorHint="#E6E6E6"
+                        android:textColorLink="#7E2702"
+                        app:endIconMode="password_toggle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/confpass_crear"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginEnd="9dp"
+                            android:backgroundTint="#E6E6E6"
+                            android:ems="10"
+                            android:hint="Password1."
+                            android:inputType="textPassword"
+                            android:paddingRight="40dp"
+                            android:textColorHighlight="#FFFFFF"
+                            android:textColorLink="#FFFFFF"
+                            tools:ignore="TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ya_tienes_cuenta"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            app:flow_horizontalAlign="center"
+                            tools:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/linkLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/be_vietnam_bold"
+                            android:text="@string/login"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            app:flow_horizontalAlign="center" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_crear_cuenta"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/boton_blanco"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="Sing Up"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

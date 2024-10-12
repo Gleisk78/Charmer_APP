@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Crearperfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1B1B1B"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#1B1B1B"
+            android:foregroundGravity="center"
+            app:flow_horizontalAlign="start"
+            app:flow_verticalAlign="top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/btn_flechaatras_perfil_MP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@drawable/flechawhite" />
+
+                <TextView
+                    android:id="@+id/Titulo_Perfil_E"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/be_vietnam"
+                    android:text="MyPerfil"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#1B1B1B"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/imgperfilpersonaP"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="30dp"
+                            android:scaleType="fitXY"
+                            app:shapeAppearanceOverlay="@style/RoundedImageView"
+                            app:srcCompat="@drawable/fotoload2"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:id="@+id/TV_Nombre"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="40dp"
+                            android:text="Nombre"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="28sp"
+                            tools:fontFamily="@font/be_vietnam_bold" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/fondo_perfil_ge">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginRight="60dp"
+                                android:layout_marginBottom="48dp"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/TV_Correo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="40dp"
+                                    android:fontFamily="@font/be_vietnam_bold"
+                                    android:text="Correo"
+                                    android:textColor="#000000"
+                                    android:textSize="22dp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/input_correo" />
+
+                                <TextView
+                                    android:id="@+id/correo_usuario"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="15dp"
+                                    android:text="correo@gmail.com"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <View
+                                    android:id="@+id/divider"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="4dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="#7E2702" />
+
+                                <TextView
+                                    android:id="@+id/TV_fono2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:fontFamily="@font/be_vietnam_bold"
+                                    android:text="Telefono"
+                                    android:textColor="#000000"
+                                    android:textSize="22dp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/input_correo" />
+
+                                <TextView
+                                    android:id="@+id/telefono_usuario"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="15dp"
+                                    android:text="+56 9 5555 5555"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <View
+                                    android:id="@+id/divider3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="4dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="#7E2702" />
+
+                                <TextView
+                                    android:id="@+id/TV_Ubicacion2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:fontFamily="@font/be_vietnam_bold"
+                                    android:text="Ubicación"
+                                    android:textColor="#000000"
+                                    android:textSize="22dp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/input_correo" />
+
+                                <TextView
+                                    android:id="@+id/ubicacion_usuario"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="15dp"
+                                    android:text="Calle Viel 6491"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <View
+                                    android:id="@+id/divider4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="4dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="#7E2702" />
+
+                                <TextView
+                                    android:id="@+id/Sexo_Cif"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:fontFamily="@font/be_vietnam_bold"
+                                    android:text="Sexo"
+                                    android:textColor="#000000"
+                                    android:textSize="22dp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/input_correo" />
+
+                                <TextView
+                                    android:id="@+id/Sexo_Usuario"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="15dp"
+                                    android:text="Otro"
+                                    android:textColor="#000000"
+                                    android:textSize="18sp" />
+
+                                <View
+                                    android:id="@+id/divider5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="4dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="#7E2702" />
+
+                                <Button
+                                    android:id="@+id/btn_EditarPerfil"
+                                    android:layout_width="140dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="70dp"
+                                    android:layout_marginTop="60dp"
+                                    android:layout_marginEnd="70dp"
+                                    android:layout_marginBottom="40dp"
+                                    android:background="@drawable/boton_redondo_negro"
+                                    android:text="Editar" />
+
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

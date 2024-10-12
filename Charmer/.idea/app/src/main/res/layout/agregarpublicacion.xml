@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".nuevapublicacion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/flecha_atras_nuevopost"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/flecha_atras_negra" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/be_vietnam_bold"
+                    android:gravity="center"
+                    android:text="@string/nueva_publicaci_n"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    tools:textAlignment="center" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/nueva_imagen_post"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitXY"
+                android:src="@drawable/agregarimagen"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/Label_Descrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/be_vietnam_bold"
+                android:text="Descripción:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/Input_descrip"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/boton_cuadrado_blanco_blanco"
+                android:gravity="top"
+                android:hint="@string/ingrese_aqui_una_breve_descripci_n"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:textAlignment="inherit"
+                android:textColor="#000000"
+                android:textColorHint="#878787" />
+
+            <TextView
+                android:id="@+id/Label_Etiquetas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/be_vietnam_bold"
+                android:text="Etiquetas:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/Input_Etiqueta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:autofillHints=""
+                android:background="@drawable/boton_cuadrado_blanco_blanco"
+                android:hint="Ejemplo: #Primavera, #Botas negras."
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingLeft="15dp"
+                android:textColor="#000000"
+                android:textColorHint="#878787" />
+
+            <Button
+                android:id="@+id/post_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/boton_redondo_negro"
+                android:text="@string/guardar" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

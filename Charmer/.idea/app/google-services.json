@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "903760939069",
+    "firebase_url": "https://charmer-uwu-default-rtdb.firebaseio.com",
+    "project_id": "charmer-uwu",
+    "storage_bucket": "charmer-uwu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903760939069:android:58f0958cf015c065e08254",
+        "android_client_info": {
+          "package_name": "com.example.charmer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903760939069-71vm37ndjci75gipj191scv448d62bu3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtnoCk7P4NKGDqSHEO7Aqt81FC0xCjaw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903760939069-71vm37ndjci75gipj191scv448d62bu3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

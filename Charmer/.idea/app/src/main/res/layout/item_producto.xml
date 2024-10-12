@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_card_prod"
+    layout_height=""
+    layout_width=""
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#00FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/id_body_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagen_producto"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:id="@+id/id_nombre_prod"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/id_titulo_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo"
+                android:textColor="#3E2121"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:fontFamily="@font/be_vietnam_bold" />
+
+            <TextView
+                android:id="@+id/id_precio_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$12.000"
+                android:textColor="#3E2121"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/id_envio_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/be_vietnam_medium"
+                android:text="Para"
+                android:textColor="#C63B00"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
